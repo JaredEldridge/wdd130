@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap');
+
+main {
+    width: 85%;
+	margin: 0 auto;
+}
+
+:root {
+    --primary-color: #3E78B2;
+    --secondary-color: #24272B;
+    --accent1-color: #4A525A;
+    --accent2-color: #004BA8;
+
+    --heading-font:var(--primary-color), serif;
+    --paragraph-font:var(--accent1-color), serif;
+
+    --nav-background-color: #4A525A;
+    --nav-link-color: #3E78B2;
+    --nav-hover-link-color: #004BA8;
+    --nav-hover-background-color: #24272B;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
