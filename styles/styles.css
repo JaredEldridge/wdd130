@@ -4,19 +4,32 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+}
+
+
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
 }
 
 h1 {
     color: steelblue;
+    border-bottom: 3px solid steelblue;
 }
 
 main img {
@@ -32,13 +45,28 @@ p {
     padding: 0;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 main {
-    max-width: 250px;
+    grid-column: 2/3;
+    max-width: 500px;
+}
+
+.main {
+    grid-column: 1/2;
 }
 
 aside {
     width: 20em;
+    margin: 1rem;
+    border : rgb(0, 0, 0, 0.2) solid 1px;
+    padding: 1rem;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
     position: relative;
 }
 
@@ -47,12 +75,15 @@ aside img {
     height: auto;
 }
 
-footer {
-    margin: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
+footer {
+    margin-top: 15px;
+    text-align: center;
+}
 
 
 /* Class Selectors */
@@ -65,9 +96,19 @@ footer {
     color: #ffffff;
 }
 
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+
 aside h2 {
     position: absolute;
     top: 30px;
     left: 130px;
     color: black;
 }
+
+
+
+
