@@ -1,10 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap');
 
+:root {
+    --primary-color: #3E78B2;
+    --secondary-color: #24272B;
+    --accent1-color: #4A525A;
+    --accent2-color: #004BA8;
+
+    --heading-font:var(--primary-color), serif;
+    --paragraph-font:var(--accent1-color), serif;
+
+    --nav-background-color: #4A525A;
+    --nav-link-color: #3E78B2;
+    --nav-hover-link-color: #004BA8;
+    --nav-hover-background-color: #24272B;
+}
 
 *{
     margin: 0;
     padding: 5px;
     box-sizing: border-box;
+    max-width: 2000px;
+  }
+
+  header {
+    display : grid;
+    grid-template-columns : 40% 1fr;
+    background-color : var(--accent1-color);
+    border : black solid 1px;
+    min-height : 200px;
+    margin-left : 30px;
+    margin-bottom : 20px;
+  }
+
+  
+
+  header img {
+    width: 150px;
+    justify-self: center;
+    align-self: center;
+    
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 90px;
+  }
+
+  header a {
+    text-decoration : none;
+    color : black;
+    border : black solid 1px;
+    margin : 0;
+    padding : 10px;
+    background-color : var(--primary-color);
+    font-size : 20px;
+    font-weight : bold;
+    text-align : center;
+    flex : 1;
   }
      
   body {
@@ -25,20 +79,7 @@
     padding: 20px;
   }
 
-:root {
-    --primary-color: #3E78B2;
-    --secondary-color: #24272B;
-    --accent1-color: #4A525A;
-    --accent2-color: #004BA8;
 
-    --heading-font:var(--primary-color), serif;
-    --paragraph-font:var(--accent1-color), serif;
-
-    --nav-background-color: #4A525A;
-    --nav-link-color: #3E78B2;
-    --nav-hover-link-color: #004BA8;
-    --nav-hover-background-color: #24272B;
-}
 
 h2 {
     font-family: var(--heading-font);
@@ -54,7 +95,16 @@ h2 {
     height: auto;
 }
 
-
+.hero h1 {
+    color : var(--accent2-color);
+    position : absolute;
+    text-align : center;
+    width : 75%;
+    top : 50px;
+    left: 225px;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+    font-size : 3.5em;
+}
 
 
 .hero {
@@ -62,15 +112,20 @@ h2 {
     width: 100%;
 }
 
-div article{
+.hero article{
+    color : var(--primary-color);
     position: absolute;
-	bottom: 10%;
-    right: 25px;
-    width: 50%;
-    height: auto;
-	background: radial-gradient(#eee, #4567aa);
-	box-shadow: 0 0 30px #111;
+	top : 200px;
+    display : block;
+    padding : 10px;
+    margin : 70px;
+    background : rgba(0, 0, 0, 0.7);
+    font-size : 2em;
+}
+
+.hero article img {
     float: right;
+    width: 300px;
 }
 
 div h1 {
@@ -80,4 +135,45 @@ div h1 {
     right: 40%;
     color: rgb(255, 255, 255);
     
+}
+
+.history img {
+    display : grid;
+    grid-template-columns : 40% 1fr; 
+    min-height : 200px;
+    margin-bottom : 20px;
+    float: left;
+  }
+
+.history p {
+    color : var(--primary-color);
+	top : 200px;
+    display : block;
+    padding : 50px;
+    margin : 70px;
+    font-size : 2em;
+}
+
+
+
+.history h2 {
+    color : var(--accent2-color);
+    text-align : left;
+    width : 75%;
+    left: 50px;
+    font-size : 3em;
+}
+
+.adventure {
+    display: inline-flex;
+    flex-direction: row;
+    
+}
+.adventure img {
+    max-height: 215px;
+}
+
+.adventure h2 {
+    color : var(--accent2-color);
+    font-size : 3em;
 }
