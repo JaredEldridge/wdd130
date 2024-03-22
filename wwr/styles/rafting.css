@@ -72,14 +72,11 @@
     background-attachment: fixed;
   }
   
-  
-  .whole_page{
+.whole_page{
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-  }
-
-
+}
 
 h2 {
     font-family: var(--heading-font);
@@ -88,6 +85,8 @@ h2 {
 
 .sociallinks a {
     text-decoration: none;
+    font-weight : bold;
+    text-align : center;
 }
 .hero img {
     display: block;
@@ -154,8 +153,6 @@ div h1 {
     font-size : 2em;
 }
 
-
-
 .history h2 {
     color : var(--accent2-color);
     text-align : left;
@@ -164,16 +161,28 @@ div h1 {
     font-size : 3em;
 }
 
-.adventure {
-    display: inline-flex;
-    flex-direction: row;
-    
+figure {
+    display: inline-block;
+    flex-direction: row; 
+    font-size: 1em;
 }
-.adventure img {
+figure img {
     max-height: 215px;
 }
 
-.adventure h2 {
+section h2 {
     color : var(--accent2-color);
     font-size : 3em;
 }
+
+footer{
+    display : grid;
+    grid-template-columns : 60% 1fr;
+    margin-left : 500px;
+}
+
+footer p {
+    justify-self: center;
+    align-self: center;
+}
+
