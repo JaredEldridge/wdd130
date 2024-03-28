@@ -186,3 +186,51 @@ footer p {
     align-self: center;
 }
 
+.employees {
+    display : flex;
+    justify-content : center;
+    flex-wrap : nowrap;
+    overflow-x : auto;
+    margin-top : 20px;
+}
+
+.employee img {
+    width : 100%;
+    border-radius : 10px;
+}
+
+.employee p {
+    margin-top : 10px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+input, select, textarea {
+    font-size: 1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
