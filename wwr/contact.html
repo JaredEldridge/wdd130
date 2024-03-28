@@ -40,15 +40,15 @@
                 <h2>Meet Our Team</h2>
                 <div class="employees">
                     <div class="employee">
-                        <img src="images/employee 1.JPG" alt="Employee 1" width="450">
+                        <img src="images/employee1.jpg" alt="Employee 1" width="450">
                         <p>Olivia - River Guide</p>
                     </div>
                     <div class="employee">
-                        <img src="images/employee 2.jpg" alt="Employee 2" width="450">
+                        <img src="images/employee2.jpg" alt="Employee 2" width="450">
                         <p>Jada - Safety Instructor</p>
                     </div>
                     <div class="employee">
-                        <img src="images/employee 3.jpg" alt="Employee 3" width="450">
+                        <img src="images/employee3.jpg" alt="Employee 3" width="450">
                         <p>Emily - Equipment Manager</p>
                     </div>
                 </div>
@@ -59,19 +59,28 @@
                 <form action="#" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required><br>
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required><br>
-                    <label for="purpose">Purpose:</label><br>
-                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
-                    <label for="inquiry">General Inquiry</label><br>
-                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                    <label for="reservation">Reservation Question</label><br>
-                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                    <label for="suggestion">Website Suggestion</label><br>
+
+                    <label> Purpose:</label><br>
+
+                    <label for="inquiry">General Inquiry</label>
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required><br>
+                    
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question"><br>
+                    
+                    <label for="suggestion">Website Suggestion</label>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion"><br>
+                    
+
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message" rows="4" required></textarea><br>
+
                     <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
                     <label for="newsletter">Subscribe to the monthly newsletter</label><br>
+
                     <button type="submit">Send Message</button>
                 </form>
             </section>
